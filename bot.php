@@ -17,22 +17,8 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-			
-			/*
-			if($text == 'ดัมเบิ้ลดอร์') $text = 'มีอะไรให้ข้ารับใช้ โปรดบอกข้ามา';
-			elseif($text =='ดัม') $text = 'มีอะไรให้ข้ารับใช้ โปรดบอกข้ามา';
-			elseif($text == '2ดอ') $text = 'มีอะไรให้ข้ารับใช้ โปรดบอกข้ามา';
-			elseif($text == 'อับดุล') $text = 'มีอะไรให้ข้ารับใช้ โปรดบอกข้ามา';
-			elseif($text == '1+1') $text = '2 ไง แค่นี้คิดไม่ได้หรอ เรียนจบมาได้ยังไงเนี๊ย';
-			elseif($text == 'Check') $text = 'อยากรู้อะไร บอกข้ามา ตรวจสอบสถานะ Application พิมพ์ App ตรวจสอบการทำงานของ Database Job พิมพ์ Job';
-			elseif($text == 'App') $text = 'Application ทำงานปกติ';
-			elseif($text == 'Job') $text = 'Job ทำงานปกติ';
-			elseif($text == 'Big') $text = 'หล่อสุดในสามโลก';
-			else $text = '';
-			*/
 			$url = 'http://democlaimpa.rvp.co.th/Services/LineTest.ashx?text=' . urlencode($text);
-			//$url = urlencode($url);
-			//$text = file_get_contents($url);
+			$text = file_get_contents($url);
 			$text = $url;
 			if($text != '')
 			{
