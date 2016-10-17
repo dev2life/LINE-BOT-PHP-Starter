@@ -16,7 +16,7 @@ $access_token = '78eGPEenScPLL3JYaUSj6R/4JFm+7sgqjvdDC1SH/RHM9Fq+Tj9rUO8xq5cpZbO
 	$url = 'https://api.line.me/v2/bot/message/push';
 	
 	$data = [
-		'to' => $to_id,
+		'to' => [$to_id],
 		'messages' => [$messages],
 	];
 	
