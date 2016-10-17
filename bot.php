@@ -32,7 +32,7 @@ if (!is_null($events['events'])) {
 			*/
 			
 			$text = file_get_contents('http://democlaimpa.rvp.co.th/Services/LineTest.ashx?text=' . json_encode($text));
-			//$text = $text
+			$text = json_decode($text, true);
 			if($text != '')
 			{
 				$messages = [
