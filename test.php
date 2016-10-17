@@ -8,7 +8,7 @@ $x_data = ['text' => 'aaaaaaaaaaaaa'];
 
 $response = file_get_contents('http://democlaimpa.rvp.co.th/Services/LineTest.ashx');
 
-echo("Test");
+echo("Test" . $response);
 
 // Method: POST, PUT, GET etc
 // Data: array("param" => "value") ==> index.php?param=value
