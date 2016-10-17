@@ -5,7 +5,7 @@ $access_token = '78eGPEenScPLL3JYaUSj6R/4JFm+7sgqjvdDC1SH/RHM9Fq+Tj9rUO8xq5cpZbO
 // Parse JSON
 //$events = json_decode($content, true);
 	
-	$to_id = 'dev2life';
+	$to_id = ['to' => 'dev2life'];
 	$messages = [
 		'type' => 'text',
 		'text' => 'ยิงๆๆๆๆๆ'
