@@ -2,9 +2,9 @@
 
 $x_method = "POST";
 $x_url = "http://democlaimpa.rvp.co.th/Services/LineTest.ashx";
-//$x_data = array("param" => "value") ==> index.php?param=value
+$x_data = ['text' => 'aaaaaaaaaaaaa'];
     
-CallAPI($x_method, $x_url)
+CallAPI($x_method, $x_url, $x_data)
 echo("Test");
 
 // Method: POST, PUT, GET etc
