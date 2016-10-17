@@ -20,9 +20,9 @@ if (!is_null($events['events'])) {
 			
 			if($text == 'ดัมเบิ้ลดอร์') $text = 'มีอะไรให้ข้ารับใช้ โปรดบอกข้ามา';
 			elseif($text == '1+1') $text = '2 ไง แค่นี้คิดไม่ได้หรอ เรียนจบมาได้ยังไงเนี๊ย';
-			elseif($text == 'check server') $text = 'อยากรู้อะไร บอกข้ามา';
-			elseif($text == 'app') $text = 'Application ทำงานปกติ';
-			elseif($text == 'job') $text = 'Job ทำงานปกติ';
+			elseif($text == 'Check server') $text = 'อยากรู้อะไร บอกข้ามา';
+			elseif($text == 'App') $text = 'Application ทำงานปกติ';
+			elseif($text == 'Job') $text = 'Job ทำงานปกติ';
 			else $text = '';
 			
 			if($text != '')
