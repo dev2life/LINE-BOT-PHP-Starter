@@ -17,7 +17,7 @@ $access_token = '78eGPEenScPLL3JYaUSj6R/4JFm+7sgqjvdDC1SH/RHM9Fq+Tj9rUO8xq5cpZbO
 		"to": "dev2life",
 		'messages' => [$messages],
 	];
-	/*
+	
 	$post = json_encode($data);
 	$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 	$ch = curl_init($url);
@@ -29,5 +29,5 @@ $access_token = '78eGPEenScPLL3JYaUSj6R/4JFm+7sgqjvdDC1SH/RHM9Fq+Tj9rUO8xq5cpZbO
 	$result = curl_exec($ch);
 	curl_close($ch);
 	echo $result . "\r\n";
-	*/
+	
 echo "OK";
