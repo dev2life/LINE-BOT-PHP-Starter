@@ -5,6 +5,9 @@ $x_url = "http://democlaimpa.rvp.co.th/Services/LineTest.ashx";
 $x_data = ['text' => 'aaaaaaaaaaaaa'];
     
 //CallAPI($x_method, $x_url, $x_data)
+
+$response = file_get_contents('http://democlaimpa.rvp.co.th/Services/LineTest.ashx');
+
 echo("Test");
 
 // Method: POST, PUT, GET etc
