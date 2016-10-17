@@ -21,6 +21,7 @@ if (!is_null($events['events'])) {
 			if($text == 'ดัมเบิ้ลดอร์') $text = 'มีอะไรให้ข้ารับใช้ โปรดบอกข้ามา';
 			elseif($text =='ดัม') $text = 'มีอะไรให้ข้ารับใช้ โปรดบอกข้ามา';
 			elseif($text == '2ดอ') $text = 'มีอะไรให้ข้ารับใช้ โปรดบอกข้ามา';
+			elseif($text == 'อับดุล') $text = 'มีอะไรให้ข้ารับใช้ โปรดบอกข้ามา';
 			elseif($text == '1+1') $text = '2 ไง แค่นี้คิดไม่ได้หรอ เรียนจบมาได้ยังไงเนี๊ย';
 			elseif($text == 'Check') $text = 'อยากรู้อะไร บอกข้ามา ตรวจสอบสถานะ Application พิมพ์ App ตรวจสอบการทำงานของ Database Job พิมพ์ Job';
 			elseif($text == 'App') $text = 'Application ทำงานปกติ';
