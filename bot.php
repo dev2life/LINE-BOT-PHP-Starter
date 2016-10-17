@@ -18,14 +18,14 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			
-			if($text == 'ดัมเบิ้ลดอร์') $text = 'ว่าไง';
+			if($text == 'ดัมเบิ้ลดอร์') $text = 'มีอะไรให้ข้ารับใช้ โปรดบอกข้ามา';
 			else $text = '';
 			
 			if($text != '')
 			{
 				$messages = [
 					'type' => 'text',
-					'text' => $text . ' จะพูดตามทำไม'
+					'text' => $text
 				];
 
 				// Make a POST Request to Messaging API to reply to sender
