@@ -19,6 +19,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			
 			if($text == 'ดัมเบิ้ลดอร์') $text = 'มีอะไรให้ข้ารับใช้ โปรดบอกข้ามา';
+			else if($text == '1+1') $text = '2 ไง แค่นี้คิดไม่ได้หรอ เรียนจบมาได้ยังไงเนี๊ย';
 			else $text = '';
 			
 			if($text != '')
