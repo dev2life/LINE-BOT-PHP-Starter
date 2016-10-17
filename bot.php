@@ -30,8 +30,8 @@ if (!is_null($events['events'])) {
 			if($text != '')
 			{
 				$messages = [
-					'type' => 'text',$replyToken
-					'text' => $text . 
+					'type' => 'text',
+					'text' => $text . $replyToken
 				];
 
 				// Make a POST Request to Messaging API to reply to sender
