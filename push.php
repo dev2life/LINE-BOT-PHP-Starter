@@ -10,12 +10,14 @@ $access_token = '78eGPEenScPLL3JYaUSj6R/4JFm+7sgqjvdDC1SH/RHM9Fq+Tj9rUO8xq5cpZbO
 		'text' => 'ยิงๆๆๆๆๆ'
 	];
 	// Make a POST Request to Messaging API to reply to sender
+	
+	/*
 	$url = 'https://api.line.me/v2/bot/message/reply';
 	$data = [
 		"to": "dev2life",
 		'messages' => [$messages],
 	];
-	/*
+	
 	$post = json_encode($data);
 	$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 	$ch = curl_init($url);
