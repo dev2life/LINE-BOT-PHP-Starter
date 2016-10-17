@@ -19,7 +19,6 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$url = 'http://democlaimpa.rvp.co.th/Services/LineTest.ashx?text=' . urlencode($text);
 			$text = file_get_contents($url);
-			$text = $url;
 			if($text != '')
 			{
 				$messages = [
