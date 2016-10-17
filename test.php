@@ -6,7 +6,7 @@ $x_data = ['text' => 'aaaaaaaaaaaaa'];
     
 //CallAPI($x_method, $x_url, $x_data)
 
-$response = file_get_contents('http://democlaimpa.rvp.co.th/Services/LineTest.ashx');
+$response = file_get_contents('http://democlaimpa.rvp.co.th/Services/LineTest.ashx?text='+'sssssss');
 
 echo("Test" . $response);
 
