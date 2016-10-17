@@ -32,8 +32,8 @@ if (!is_null($events['events'])) {
 			*/
 			$url = 'http://democlaimpa.rvp.co.th/Services/LineTest.ashx?text=' . $text;
 			$url = urlencode($url);
-			$text = file_get_contents($url);
-			//$text = json_decode($text, true);
+			//$text = file_get_contents($url);
+			$text = $url;
 			if($text != '')
 			{
 				$messages = [
