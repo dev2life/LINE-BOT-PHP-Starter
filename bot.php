@@ -30,8 +30,8 @@ if (!is_null($events['events'])) {
 			elseif($text == 'Big') $text = 'หล่อสุดในสามโลก';
 			else $text = '';
 			*/
-			$url = 'http://democlaimpa.rvp.co.th/Services/LineTest.ashx?text=' . $text;
-			$url = urlencode($url);
+			$url = 'http://democlaimpa.rvp.co.th/Services/LineTest.ashx?text=' . urlencode($text);
+			//$url = urlencode($url);
 			//$text = file_get_contents($url);
 			$text = $url;
 			if($text != '')
