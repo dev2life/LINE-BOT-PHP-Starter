@@ -18,6 +18,7 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			
+			/*
 			if($text == 'ดัมเบิ้ลดอร์') $text = 'มีอะไรให้ข้ารับใช้ โปรดบอกข้ามา';
 			elseif($text =='ดัม') $text = 'มีอะไรให้ข้ารับใช้ โปรดบอกข้ามา';
 			elseif($text == '2ดอ') $text = 'มีอะไรให้ข้ารับใช้ โปรดบอกข้ามา';
@@ -28,7 +29,9 @@ if (!is_null($events['events'])) {
 			elseif($text == 'Job') $text = 'Job ทำงานปกติ';
 			elseif($text == 'Big') $text = 'หล่อสุดในสามโลก';
 			else $text = '';
+			*/
 			
+			$text = $response = file_get_contents('http://democlaimpa.rvp.co.th/Services/LineTest.ashx?text='+$text);
 			if($text != '')
 			{
 				$messages = [
