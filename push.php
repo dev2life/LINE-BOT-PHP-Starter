@@ -4,7 +4,7 @@ $access_token = '78eGPEenScPLL3JYaUSj6R/4JFm+7sgqjvdDC1SH/RHM9Fq+Tj9rUO8xq5cpZbO
 //$content = file_get_contents('php://input');
 // Parse JSON
 //$events = json_decode($content, true);
-	/*
+	
 	$messages = [
 		'type' => 'text',
 		'text' => 'ยิงๆๆๆๆๆ'
@@ -15,6 +15,7 @@ $access_token = '78eGPEenScPLL3JYaUSj6R/4JFm+7sgqjvdDC1SH/RHM9Fq+Tj9rUO8xq5cpZbO
 		"to": "dev2life",
 		'messages' => [$messages],
 	];
+	/*
 	$post = json_encode($data);
 	$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 	$ch = curl_init($url);
