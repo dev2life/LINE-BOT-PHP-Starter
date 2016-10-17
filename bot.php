@@ -31,8 +31,9 @@ if (!is_null($events['events'])) {
 			else $text = '';
 			*/
 			
-			$text = file_get_contents('http://democlaimpa.rvp.co.th/Services/LineTest.ashx?text=' . json_encode($text));
-			$text = json_decode($text, true);
+			//$text = file_get_contents('http://democlaimpa.rvp.co.th/Services/LineTest.ashx?text=' . json_encode($text));
+			//$text = json_decode($text, true);
+			$text = json_encode($text, true);
 			if($text != '')
 			{
 				$messages = [
