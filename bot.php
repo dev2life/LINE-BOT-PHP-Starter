@@ -31,8 +31,8 @@ if (!is_null($events['events'])) {
 			else $text = '';
 			*/
 			
-			//$text = $response = file_get_contents('http://democlaimpa.rvp.co.th/Services/LineTest.ashx?text='.$text);
-			$text = $text.'1234'
+			$text = file_get_contents('http://democlaimpa.rvp.co.th/Services/LineTest.ashx?text=' . $text);
+			$text = $text . '1234'
 			if($text != '')
 			{
 				$messages = [
