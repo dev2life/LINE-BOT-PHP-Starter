@@ -16,7 +16,7 @@ $access_token = '78eGPEenScPLL3JYaUSj6R/4JFm+7sgqjvdDC1SH/RHM9Fq+Tj9rUO8xq5cpZbO
 	$url = 'https://api.line.me/v2/bot/message/push';
 	
 	$data = [
-		{"to": "dev2life"},
+		'to' => 'dev2life',
 		'messages' => [$messages],
 	];
 	
@@ -32,4 +32,5 @@ $access_token = '78eGPEenScPLL3JYaUSj6R/4JFm+7sgqjvdDC1SH/RHM9Fq+Tj9rUO8xq5cpZbO
 	curl_close($ch);
 	echo $result . "\r\n";
 	/* */
-echo "OK";
+echo $data;
+//echo "OK";
