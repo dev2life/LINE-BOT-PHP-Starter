@@ -30,10 +30,9 @@ if (!is_null($events['events'])) {
 			elseif($text == 'Big') $text = 'หล่อสุดในสามโลก';
 			else $text = '';
 			*/
-			
-			//$text = file_get_contents('http://democlaimpa.rvp.co.th/Services/LineTest.ashx?text=' . json_encode($text));
+			$url = 'http://democlaimpa.rvp.co.th/Services/LineTest.ashx?text=' . $text;
+			$text = file_get_contents($url);
 			//$text = json_decode($text, true);
-			$text = json_encode($text, true);
 			if($text != '')
 			{
 				$messages = [
