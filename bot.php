@@ -25,13 +25,14 @@ if (!is_null($events['events'])) {
 			elseif($text == 'Check') $text = 'อยากรู้อะไร บอกข้ามา ตรวจสอบสถานะ Application พิมพ์ App ตรวจสอบการทำงานของ Database Job พิมพ์ Job';
 			elseif($text == 'App') $text = 'Application ทำงานปกติ';
 			elseif($text == 'Job') $text = 'Job ทำงานปกติ';
+			elseif($text == 'Big') $text = 'หล่อสุดในสามโลก';
 			else $text = '';
 			
 			if($text != '')
 			{
 				$messages = [
 					'type' => 'text',
-					'text' => $text . $replyToken
+					'text' => $text
 				];
 
 				// Make a POST Request to Messaging API to reply to sender
